@@ -21,6 +21,8 @@ class Person {
 
     public function sayGoodbye() {
         echo "Goodbye from ".self::getTitle()."<br/>";
+        $arraystuff[] = self::getTitle();
+        // remove this, just being used to test git
     }
 }
 
@@ -40,4 +42,6 @@ $geekObj->sayGoodbye();
 
 $geekObj = new Person("Ludwig");
 $geekObj->sayHello();
+
+// this is the neatest thing and will be used quite a bit.
 ?>
