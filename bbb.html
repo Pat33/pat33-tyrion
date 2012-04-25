@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  button { display:block; margin:3px; color:red; width:200px; }
+  div { color:red; border:2px solid blue; width:200px;
+      margin:3px; text-align:center; }
+  </style>
+ 
+</head>
+<body>
+  
+<button>First</button>
+<button>Second</button>
+<button>Third</button>
+
+<script>
+
+
+$("button").click(function () {
+  $(this).replaceWith( "<div>" + $(this).text() + "</div>" );
+});
+
+</script>
+
+
+<script>
+if (jQuery) {  
+    // jQuery is loaded  
+    document.write("JQuery in da house!");
+} else {
+	    document.write("no Load");
+}
+
+</script>
+
+
+ <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+
+</body>
+</html>
